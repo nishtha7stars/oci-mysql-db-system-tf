@@ -155,7 +155,7 @@ resource oci_core_route_table route_table {
     network_entity_id = oci_core_nat_gateway.nat_gateway.id
   }
   route_rules {
-    destination = "all-iad-services-in-oracle-services-network"
+    destination = "all-bom-services-in-oracle-services-network"
     destination_type = "SERVICE_CIDR_BLOCK"
     network_entity_id = oci_core_service_gateway.service_gateway.id
   }
